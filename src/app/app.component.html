@@ -1,7 +1,22 @@
 <div class="text-layout">
-    <h1>{{ 'hoLa mundo' | lowercase }}</h1>
+    <h1>{{ nombre | lowercase }}</h1>
+    <h1>{{ valor  | number }}</h1>
+    <h1>{{ obj    | json }}</h1>
 </div>
 
 
-<button pButton 
-        label="Presioneme UwU"></button>
+<button pButton
+        icon="pi pi-android"
+        iconPos="right"
+        label="Presioneme UwU"
+        class="p-button-help"></button>
+
+<p-card [header]="nombre | titlecase"
+        subheader="Esto es un subheader">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Inventore sed consequuntur error repudiandae numquam deserunt 
+        quisquam repellat libero asperiores earum nam nobis, culpa ratione 
+        quam perferendis esse, cupiditate neque quas!
+    </p>
+</p-card>
