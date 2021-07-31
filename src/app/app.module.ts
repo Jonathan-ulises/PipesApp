@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-// PrimeNG
-import { ButtonModule } from 'primeng/button';
-import { CardModule } from 'primeng/card';
-
 import { AppComponent } from './app.component';
+
+//Modulo personalizado para componentes de PrimeNg
+import { PrimeNgModule } from './prime-ng/prime-ng.module';
+
+
 
 @NgModule({
   declarations: [
@@ -13,8 +14,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    ButtonModule,
-    CardModule
+    PrimeNgModule
   ],
   providers: [],
   bootstrap: [AppComponent]
