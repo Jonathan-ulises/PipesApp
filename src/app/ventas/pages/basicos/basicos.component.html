@@ -32,3 +32,36 @@
     </div>
     
 </div>
+
+<div class="text-layout">
+    <h1>Date | Fecha | Pipé</h1>
+    <p>
+        Pipes para mostrar las fechas.
+    </p>
+</div>
+
+<div class="grid">
+    <div class="col-6">
+        <p-card header="Implementacion">
+            <ul>
+                <li> fecha </li>
+                <li> fecha | date </li>
+                <li> fecha | date: 'short' </li>
+                <li> fecha | date: 'long' </li>
+                <li> fecha | date: 'GG / dd - MMMM - yy / EEEE / hh:mm:ss aa' </li>
+            </ul>
+        </p-card>
+    </div>
+    <div class="col-6">
+        <p-card header="Resultado">
+            <ul>
+                <li> {{ fecha }} </li>
+                <li> {{ fecha | date }} </li>
+                <li> {{ fecha | date: 'short' }} </li>
+                <li> {{ fecha | date: 'long' }} </li>
+                <li> {{ fecha | date: 'GG / dd - MMMM - yy / EEEE / hh:mm:ss aa' }} </li>
+                
+            </ul>
+        </p-card>
+    </div>
+</div>
