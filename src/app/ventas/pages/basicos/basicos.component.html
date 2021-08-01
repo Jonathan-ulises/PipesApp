@@ -50,6 +50,15 @@
                 <li> fecha | date: 'long' </li>
                 <li> fecha | date: 'GG / dd - MMMM - yy / EEEE / hh:mm:ss aa' </li>
             </ul>
+
+            <hr>
+
+            <ul>
+                <li> fecha | date: 'long': 'GMT+9' </li>
+                <li> fecha | date: 'long': '': 'en' </li>
+                <li> fecha | date: 'long': 'GMT+9': 'ja' </li>
+                <li> fecha | date: 'long': 'GMT-6': 'es-MX' </li>
+            </ul>
         </p-card>
     </div>
     <div class="col-6">
@@ -60,7 +69,15 @@
                 <li> {{ fecha | date: 'short' }} </li>
                 <li> {{ fecha | date: 'long' }} </li>
                 <li> {{ fecha | date: 'GG / dd - MMMM - yy / EEEE / hh:mm:ss aa' }} </li>
-                
+            </ul>
+
+            <hr>
+
+            <ul>
+                <li> {{ fecha | date: 'long': 'GMT+9' }} </li>
+                <li> {{ fecha | date: 'long': '': 'en' }} </li>
+                <li> {{ fecha | date: 'long': 'GMT+9': 'ja' }} </li>
+                <li> {{ fecha | date: 'long': 'GMT-6': 'es-MX' }} </li>
             </ul>
         </p-card>
     </div>
