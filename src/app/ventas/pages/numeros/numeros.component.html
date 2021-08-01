@@ -1,1 +1,25 @@
-<p>numeros works!</p>
+<div class="text-layout">
+    <h1>DecimalPipes y Porcentaje</h1>
+    <p>
+        Pipes Incluidos en Angular - Usualmente
+        en el Common Module.
+    </p>
+</div>
+
+<div class="grid">
+    <div class="col-4">
+        <p-card header="Ventas Netas"
+                subheader="Ventas netas del presente año">
+                <!-- 
+                    DecimaPipe le da el formato de puntuacion a los numeros y redondea
+                    a tres decimales. Todo esto de forma visual, no altera su valor. 
+                    Para el formato se especifica la cantidad de digitos antes del punto
+                    1 = todos los digitos disponibles del valor, despues del punto se especifica
+                    la cantidad de decimales con un rango de valores, en este ejemplo siempre se mostraran
+                    2 decimales (2 - 2), pero pueden ser de 1 a 5 decimales (1 - 5).
+                -->
+                <i class="pi pi-dollar"></i>
+                {{ ventasNetas | number: '1.2-2' }}
+        </p-card>
+    </div>
+</div>
