@@ -10,18 +10,23 @@ import { BasicosComponent } from './pages/basicos/basicos.component';
 import { OrdenarComponent } from './pages/ordenar/ordenar.component';
 
 import { MayusculasPipe } from './pipes/mayusculas.pipe';
+import { OrdenarPipe } from './pipes/ordenar.pipe';
 import { VuelaPipe } from './pipes/vuela.pipe';
 
 
 
 @NgModule({
   declarations: [
+    //Components
     NumerosComponent,
     NoComunesComponent,
     BasicosComponent,
     OrdenarComponent,
+
+    //Pipes
     MayusculasPipe,
-    VuelaPipe
+    VuelaPipe,
+    OrdenarPipe
   ],
   exports: [
     NumerosComponent,

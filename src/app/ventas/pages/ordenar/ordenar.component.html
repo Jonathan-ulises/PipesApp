@@ -33,7 +33,7 @@
 
         <button pButton
                 pRipple
-                label="Valores"
+                label="Vuela"
                 icon="pi pi-sort"
                 class="p-button-success mr-1"></button>
 
@@ -48,7 +48,7 @@
 <div class="grid">
     <div class="col mt-2">
 
-        <p-table [value]="heroes">
+        <p-table [value]="heroes | ordenar">
             <ng-template pTemplate="header">
                 <tr>
                     <th>Nombre</th>
