@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 })
 export class NoComunesComponent {
 
+  //i18nSelect
   nombre: string = 'Susana';
   genero: string = 'F';
 
@@ -19,4 +20,12 @@ export class NoComunesComponent {
     'F': 'Invitarla'
   }
 
+  //i18nPlural
+  clientes: string[] = ['Maria', 'Pedro', 'Hernando', 'Eduardo', 'Fernando'];
+  clientesMapa = {
+    '=0': 'no tenemos ningun cliente esperando.',
+    '=1': 'tenemos un ningun cliente esperando.',
+    '=2': 'tenemos dos ningun cliente esperando.',
+    'other': 'tenemos # clientes esperando'
+  }
 }
