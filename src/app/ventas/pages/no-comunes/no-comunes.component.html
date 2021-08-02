@@ -14,15 +14,33 @@
             una clave igual a un valor (genero). El valor obtenido del mapa sera el que se representara en pantalla.
          -->
         <p-fieldset legend="i18nSelect Pipe" [toggleable]="true">
-            Saludos {{ nombre }}, es un placer 
-            {{ genero | i18nSelect: invitacionMapa }}
-            a nuestro evento
+            <p>
+                Saludos {{ nombre }}, es un placer
+                {{ genero | i18nSelect: invitacionMapa }}
+                a nuestro evento
+            </p>
+            <button pButton 
+                    pRipple 
+                    (click)="cambiarPersona()"
+                    label="Cambiar persona" 
+                    class="p-button-help p-button-outlined">
+            </button>
         </p-fieldset>
     </div>
 
     <div class="col md:col-6">
         <p-fieldset legend="i18nPlural Pipe" [toggleable]="true">
-            Actualmente {{ clientes.length | i18nPlural: clientesMapa }} cliente esperando.
+            <p>
+                Actualmente 
+                {{ clientes.length | i18nPlural: clientesMapa }} 
+                cliente esperando.
+            </p>
+            <button pButton
+                    pRipple
+                    (click)="borrarClientes()"
+                    label="Borrar cliente"
+                    class="p-button-danger p-button-outlined">
+            </button>
         </p-fieldset>
     </div>
 </div>
