@@ -9,6 +9,7 @@ import { Color, Heroe } from '../../interfaces/ventas.interfaces';
 })
 export class OrdenarComponent {
 
+  ordenarPor: string = '';
   upperLower: boolean = false;
   heroes: Heroe[] = [
     {
@@ -42,5 +43,8 @@ export class OrdenarComponent {
     this.upperLower = !this.upperLower;
   }
 
-
+  cambiarOrden( valor: string ) {
+    this.ordenarPor = valor;
+    console.log(valor)
+  }
 }

@@ -29,26 +29,29 @@
                 pRipple
                 label="Por Nombre"
                 icon="pi pi-sort"
-                class="mr-2"></button>
+                class="mr-2"
+                (click)="cambiarOrden('nombre')"></button>
 
         <button pButton
                 pRipple
                 label="Vuela"
                 icon="pi pi-sort"
-                class="p-button-success mr-1"></button>
+                class="p-button-success mr-1"
+                (click)="cambiarOrden('vuela')"></button>
 
         <button pButton
                 pRipple
                 label="Por Color"
                 icon="pi pi-sort"
-                class="p-button-help mr-1"></button>
+                class="p-button-help mr-1"
+                (click)="cambiarOrden('color')"></button>
     </div>
 </p-toolbar>
 
 <div class="grid">
     <div class="col mt-2">
 
-        <p-table [value]="heroes | ordenar">
+        <p-table [value]="heroes | ordenar: ordenarPor ">
             <ng-template pTemplate="header">
                 <tr>
                     <th>Nombre</th>
