@@ -1,6 +1,14 @@
 <div class="text-layout">
     <h1>Pipes Personalizados</h1>
     <p>
-        Pipes Creados por {{ 'nosotros' | mayusculas }}
+        Pipes Creados por {{ 'nosotros' | mayusculas: upperLower }}
     </p>
+
+    <button pButton
+            pRipple
+            label="Toggle Mayusculas"
+            (click)="changeUpperLower()"
+            class="p-button-warning p-button-raised p-button-text">
+
+    </button>
 </div>
