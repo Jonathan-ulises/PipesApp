@@ -9,8 +9,14 @@
 <div class="grid">
 
     <div class="col md:col-6">
+        <!-- 
+            Este pipe, necesita un mapa de objetos (invitacionMapa), este seleccionara el valor que tenga
+            una clave igual a un valor (genero). El valor obtenido del mapa sera el que se representara en pantalla.
+         -->
         <p-fieldset legend="i18nSelect Pipe" [toggleable]="true">
-            Content
+            Saludos {{ nombre }}, es un placer 
+            {{ genero | i18nSelect: invitacionMapa }}
+            a nuestro evento
         </p-fieldset>
     </div>
 

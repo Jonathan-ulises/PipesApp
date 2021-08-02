@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-no-comunes',
@@ -6,11 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class NoComunesComponent implements OnInit {
+export class NoComunesComponent {
 
-  constructor() { }
+  nombre: string = 'Susana';
+  genero: string = 'F';
 
-  ngOnInit(): void {
+  /*
+  Mapa de valores para el pipe i18nSelect
+  */
+  invitacionMapa = {
+    'M': 'invitarlo',
+    'F': 'Invitarla'
   }
 
 }
