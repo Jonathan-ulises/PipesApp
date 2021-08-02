@@ -7,9 +7,10 @@
 </div>
 
 <div class="grid">
+
     <div class="col-4">
         <p-card header="Ventas Netas"
-                subheader="Ventas netas del presente año">
+                subheader="del presente año">
                 <!-- 
                     DecimaPipe le da el formato de puntuacion a los numeros y redondea
                     a tres decimales. Todo esto de forma visual, no altera su valor. 
@@ -20,6 +21,22 @@
                 -->
                 <i class="pi pi-dollar"></i>
                 {{ ventasNetas | number: '1.2-2' }}
+        </p-card>
+    </div>
+
+    <div class="col-4">
+        <p-card header="Ventas Brutas"
+                subheader="del presente año">
+                
+                {{ (ventasNetas + 2000000) | currency: 'USD' : 'symbol-narrow': '1.4-4' }}
+        </p-card>
+    </div>
+
+    <div class="col-4">
+        <p-card header="Ganancia Porcentual"
+                subheader="del presente año">
+                
+                {{ porcentaje | percent: '1.2-2' }}
         </p-card>
     </div>
 </div>
